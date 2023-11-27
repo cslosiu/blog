@@ -1,6 +1,6 @@
 This article shows example codes in both iOS side and server side to let you know how to make use of Firebase Cloud Messaging (FCM) to implement push notification for your iOS app.
 
-You need to use the (Firebase)[https://firebase.google.com/] for your iOS app.
+You need to use the [Firebase](https://firebase.google.com/) for your iOS app.
 
 # Not in this article
 
@@ -8,7 +8,7 @@ I will not go into detail on how to setup in Xcode side nor the certification is
 
 # Basic concept about iOS push notification
 
-Almost every iOS app needs push notification. And you don’t want to deal with (complicated details)[https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/notifications/].
+Almost every iOS app needs push notification. And you don’t want to deal with [complicated details](https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/notifications/).
 
 Here is the basic components you need to know.
 
@@ -92,11 +92,12 @@ admin.messaging().send(message)
 
 As you see, the key point here is to construct a JSON structure to represent your message to send to your iOS app. Please look at the message variable. It consists of 3 parts.
 
-The notification: This is what displays in the push notification banner on the iOS device.
+The `notification`: This is what displays in the push notification banner on the iOS device.
 
-The data: This is the data you want to send to the iOS app to process with. The name of the fields seem could be any string but please try to avoid using strange ones and be simple, and avoid symbols.
+The `data`: This is the data you want to send to the iOS app to process with. The name of the fields seem could be any string but please try to avoid using strange ones and be simple, and avoid symbols.
 
-The topic: This is the FCM topic string that your iOS app subscribes to.
+The `topic`: This is the FCM topic string that your iOS app subscribes to.
 
-Conclusion
+# Conclusion
+
 We hope this is helpful. Please let me know in comments that you have any doubts. We try to make this writing short. So you would still need to check Firebase documentations to know how it really works.
