@@ -29,7 +29,7 @@ We need to do these steps.
 
 On the iOS app, we have several ways to receive messages from the FCM. In this case, for the simplicity, we choose “subscription by topic” approach. The Topic is actually a string, and our app subscribe it via a call:
 
-```
+```swift
 Messaging.messaging().subscribe(toTopic: topicString)
 ```
 
